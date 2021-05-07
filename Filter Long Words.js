@@ -6,6 +6,7 @@
 
 // filterLongWords("The quick brown fox jumps over the lazy dog", 4) = ['quick', 'brown', 'jumps']
 
+//Solution 1:
 function filterLongWords(sentence, n) {
     let res = [];
     let x = sentence.split(' ')
@@ -16,4 +17,9 @@ function filterLongWords(sentence, n) {
     }
      return res;
   }
-  
+//Solution 2:
+function filterLongWords(sentence, n) {
+    let x = sentence.split(' ')
+    let res = x.filter(word => word.length > n)
+    return res;
+  }
