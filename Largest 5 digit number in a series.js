@@ -30,5 +30,5 @@ function solution(digits){
   
     let z = x.sort((a,b) => {return b-a })
     return Number(z[0])
-    
+}  
   
