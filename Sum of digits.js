@@ -13,25 +13,14 @@ function sum(digits) {
 
   //solution 2
   function sum(digits) {
-  
-    if(!digits) {
+    if(!digits && digits !== 0) {
       return ``;
     } else if(digits === 0) {
-      return `${digits} = ${digits}`
+      return `0 = 0`
     } else {
-  
-    
-    let nums = []
-    let res = 0;
-    
-    for(let i = 0; i < digits.length; i++) {
-      res = res + Number(digits[i])
-      nums.push(digits[i])
-      
+      let nums = `${digits}`;
+      let equation = nums.split('')
+      let res = eval(equation.join(' + ')) ;
+    return `${equation.join(' + ')} = ${res}`;
     }
-    
-    return `${nums.join(' + ')} = ${res}`;
-    }
-  
-  
   }
