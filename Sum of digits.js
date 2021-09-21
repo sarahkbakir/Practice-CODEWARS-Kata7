@@ -21,6 +21,8 @@ function sum(digits) {
       let nums = `${digits}`;
       let equation = nums.split('')
       let res = eval(equation.join(' + ')) ;
-    return `${equation.join(' + ')} = ${res}`;
+    
+      return `${equation.join(' + ')} = ${res}`;
     }
+
   }
